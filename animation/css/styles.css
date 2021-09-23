@@ -1,0 +1,44 @@
+@import './reset.css';
+
+body,
+html {
+  height: 100%;
+  background: black;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.square {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+
+  animation: rotation 2s linear infinite normal,
+    change-color 2s ease-in-out infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes change-color {
+  0% {
+    background: red;
+  }
+
+  50% {
+    background: orange;
+  }
+
+  100% {
+    background: green;
+  }
+}

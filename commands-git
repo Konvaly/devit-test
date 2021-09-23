@@ -1,0 +1,34 @@
+ 
+Рабочее окружение
+Вы закончили работу над задачей для клиента у вас есть рабочий код, который который был создан без использования git. Клиент создал пустой репозиторий git@example.com:example/test.git и расшалил для вас доступ.
+
+Задание
+Опишите ваши дальнейшие действия что бы ваш код появился на ветке master в репозитории git@example.com:example/test.git
+
+1. Создаю папку для проекта:
+mkdir repo_example
+#
+2. Перехожу в нее
+cd repo_example
+#
+3. Инициализирую репозиторий:
+git init
+
+#4.Настраиваю локальные имя и e-mail для проекта:
+git config user.name "DevExample"
+git config user.email dev@example.com
+#
+5.Проверяю настройки
+git config --list
+#
+6.Сохраняю изменения:
+git add .
+#
+7.Делаю коммит:
+git commit -m "Initial commit"
+#
+8.Добавляю удаленный репо
+git remote add origin git@example.com:example/test.git
+#
+8. Отправляю на git:
+git push origin master

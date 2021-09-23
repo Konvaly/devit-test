@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formRegistration</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Registration form</h2>
+      </div>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="formField">
+          <label for="firstname" name="firstname">First name</label>
+          <input
+            type="text"
+            id="txtFirstName"
+            name="firstname"
+            placeholder="First name"
+            autofocus
+            required
+          />
+        </div>
+        <div class="formField">
+          <label for="lastname" name="lastname">Last name</label>
+          <input
+            type="text"
+            id="txtLastName"
+            name="lastname"
+            placeholder="Last name"
+            required
+          />
+        </div>
+        <div class="formField">
+          <label for="email" name="email">E-mail</label>
+          <input
+            type="email"
+            id="txtEmail"
+            name="email"
+            placeholder="e-mail"
+            required
+          />
+        </div>
+        <div class="formField">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            value="1"
+            min="1"
+            max="100"
+            required
+          />
+        </div>
+        <div class="formField">
+          <label for="avatar">Avatar</label>
+          <input type="file" id="txtAvatar" name="avatar" required />
+        </div>
+        <div class="formField">
+          <label for="pwd">Password</label>
+          <input
+            type="password"
+            id="txtPwd"
+            name="pwd"
+            placeholder="password"
+            required
+          />
+        </div>
+        <div class="formField">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+@import './reset.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(116, 178, 236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  min-width: 320px;
+  background-color: rgb(238, 235, 226);
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgb(90, 218, 235);
+  padding: 10px 20px;
+}
+
+form {
+  padding: 20px 40px;
+}
+
+.formField {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.formField label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.formField input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 2px solid rgb(119, 136, 153);
+}
+
+button {
+  background-color: rgb(116, 178, 236);
+  color: rgb(3, 24, 13);
+  padding: 10px 20px;
+  width: 100%;
+  font-weight: bold;
+  border: 2px solid rgb(30, 33, 218);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input:invalid {
+  border: 2px solid rgb(255, 0, 0);
+}
+
+input:valid {
+  border: 2px solid rgb(119, 136, 153);
+}
